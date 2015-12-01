@@ -74,6 +74,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ChanceCalculator.feature</DependentUpon>
     </Compile>
+    <Compile Include="CategoryCalculatorTests\GetMaxScore.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetMaxScore.feature</DependentUpon>
+    </Compile>
     <Compile Include="CategoryCalculatorTests\GroupCalculator.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -108,6 +113,10 @@
     <None Include="CategoryCalculatorTests\ChanceCalculator.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ChanceCalculator.feature.cs</LastGenOutput>
+    </None>
+    <None Include="CategoryCalculatorTests\GetMaxScore.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GetMaxScore.feature.cs</LastGenOutput>
     </None>
     <None Include="CategoryCalculatorTests\GroupCalculator.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
