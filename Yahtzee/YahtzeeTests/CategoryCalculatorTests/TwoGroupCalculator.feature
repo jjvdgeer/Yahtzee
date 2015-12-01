@@ -1,5 +1,5 @@
-﻿Feature: TwoPairCalculator
-	In order to calculate Yahtzee scores of double pairs
+﻿Feature: TwoGroupCalculator
+	In order to calculate Yahtzee scores of two groups
 	As a player
 	I want to be told the score of a roll
 

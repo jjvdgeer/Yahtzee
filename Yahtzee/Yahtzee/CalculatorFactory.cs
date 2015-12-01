@@ -13,11 +13,11 @@ namespace Yahtzee
 			yield return new SingleNumberCalculator(Category.Fours, 4);
 			yield return new SingleNumberCalculator(Category.Fives, 5);
 			yield return new SingleNumberCalculator(Category.Sixes, 6);
-			yield return new PairCalculcator(Category.Pair, 2);
-			yield return new PairCalculcator(Category.ThreeOfAKind, 3);
-			yield return new PairCalculcator(Category.FourOfAKind, 4);
-			yield return new TwoPairsCalculator(Category.TwoPairs, 2, 2);
-			yield return new TwoPairsCalculator(Category.FullHouse, 3, 2);
+			yield return new GroupCalculcator(Category.Pair, 2);
+			yield return new GroupCalculcator(Category.ThreeOfAKind, 3);
+			yield return new GroupCalculcator(Category.FourOfAKind, 4);
+			yield return new TwoGroupsCalculator(Category.TwoPairs, 2, 2);
+			yield return new TwoGroupsCalculator(Category.FullHouse, 3, 2);
 		}
 	}
 }

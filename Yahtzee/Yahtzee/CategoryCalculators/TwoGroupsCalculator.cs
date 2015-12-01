@@ -3,11 +3,11 @@ using System.Linq;
 
 namespace Yahtzee.CategoryCalculators
 {
-	public class TwoPairsCalculator : PairCalculcator
+	public class TwoGroupsCalculator : GroupCalculcator
 	{
 		private readonly int _secondCount;
 
-		public TwoPairsCalculator(Category category, int firstCount, int secondCount)
+		public TwoGroupsCalculator(Category category, int firstCount, int secondCount)
 			: base(category, firstCount)
 		{
 			_secondCount = secondCount;

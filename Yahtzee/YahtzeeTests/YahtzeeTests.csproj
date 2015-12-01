@@ -69,10 +69,10 @@
   </Choose>
   <ItemGroup>
     <Compile Include="CalculatorFactoryTest.cs" />
-    <Compile Include="CategoryCalculatorTests\PairCalculator.feature.cs">
+    <Compile Include="CategoryCalculatorTests\GroupCalculator.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>PairCalculator.feature</DependentUpon>
+      <DependentUpon>GroupCalculator.feature</DependentUpon>
     </Compile>
     <Compile Include="CategoryCalculatorTests\SingleNumberCalculator.feature.cs">
       <AutoGen>True</AutoGen>
@@ -80,27 +80,27 @@
       <DependentUpon>SingleNumberCalculator.feature</DependentUpon>
     </Compile>
     <Compile Include="CategoryCalculatorTests\Steps\CalculatorSteps.cs" />
-    <Compile Include="CategoryCalculatorTests\TwoPairCalculator.feature.cs">
+    <Compile Include="CategoryCalculatorTests\TwoGroupCalculator.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TwoPairCalculator.feature</DependentUpon>
+      <DependentUpon>TwoGroupCalculator.feature</DependentUpon>
     </Compile>
     <Compile Include="YahtzeeScorerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="CategoryCalculatorTests\PairCalculator.feature">
+    <None Include="CategoryCalculatorTests\GroupCalculator.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>PairCalculator.feature.cs</LastGenOutput>
+      <LastGenOutput>GroupCalculator.feature.cs</LastGenOutput>
     </None>
     <None Include="CategoryCalculatorTests\SingleNumberCalculator.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SingleNumberCalculator.feature.cs</LastGenOutput>
     </None>
-    <None Include="CategoryCalculatorTests\TwoPairCalculator.feature">
+    <None Include="CategoryCalculatorTests\TwoGroupCalculator.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>TwoPairCalculator.feature.cs</LastGenOutput>
+      <LastGenOutput>TwoGroupCalculator.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
