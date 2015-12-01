@@ -3,6 +3,10 @@ namespace Yahtzee
 	public enum Category
 	{
 		Ones,
-		Twos
+		Twos,
+		Threes,
+		Fours,
+		Fives,
+		Sixes
 	}
 }
