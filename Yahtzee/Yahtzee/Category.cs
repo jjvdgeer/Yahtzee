@@ -15,5 +15,6 @@ namespace Yahtzee
 		FullHouse,
 		SmallStraight,
 		LargeStraight,
+		Chance,
 	}
 }

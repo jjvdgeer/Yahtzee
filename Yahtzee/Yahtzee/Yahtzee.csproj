@@ -42,6 +42,7 @@
     <Compile Include="CalculatorFactory.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="CategoryCalculators\CategoryCalculator.cs" />
+    <Compile Include="CategoryCalculators\ChanceCalculator.cs" />
     <Compile Include="CategoryCalculators\ICategoryCalculator.cs" />
     <Compile Include="CategoryCalculators\GroupCalculcator.cs" />
     <Compile Include="CategoryCalculators\SingleNumberCalculator.cs" />
