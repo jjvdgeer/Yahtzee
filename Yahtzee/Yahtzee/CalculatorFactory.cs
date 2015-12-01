@@ -18,6 +18,8 @@ namespace Yahtzee
 			yield return new GroupCalculcator(Category.FourOfAKind, 4);
 			yield return new TwoGroupsCalculator(Category.TwoPairs, 2, 2);
 			yield return new TwoGroupsCalculator(Category.FullHouse, 3, 2);
+			yield return new StraightCalculator(Category.SmallStraight, 1, 5);
+			yield return new StraightCalculator(Category.LargeStraight, 2, 6);
 		}
 	}
 }

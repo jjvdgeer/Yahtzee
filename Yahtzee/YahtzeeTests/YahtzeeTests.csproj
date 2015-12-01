@@ -80,6 +80,11 @@
       <DependentUpon>SingleNumberCalculator.feature</DependentUpon>
     </Compile>
     <Compile Include="CategoryCalculatorTests\Steps\CalculatorSteps.cs" />
+    <Compile Include="CategoryCalculatorTests\StraightCalculator.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StraightCalculator.feature</DependentUpon>
+    </Compile>
     <Compile Include="CategoryCalculatorTests\TwoGroupCalculator.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -97,6 +102,10 @@
     <None Include="CategoryCalculatorTests\SingleNumberCalculator.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SingleNumberCalculator.feature.cs</LastGenOutput>
+    </None>
+    <None Include="CategoryCalculatorTests\StraightCalculator.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>StraightCalculator.feature.cs</LastGenOutput>
     </None>
     <None Include="CategoryCalculatorTests\TwoGroupCalculator.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

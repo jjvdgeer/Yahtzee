@@ -45,6 +45,7 @@
     <Compile Include="CategoryCalculators\ICategoryCalculator.cs" />
     <Compile Include="CategoryCalculators\GroupCalculcator.cs" />
     <Compile Include="CategoryCalculators\SingleNumberCalculator.cs" />
+    <Compile Include="CategoryCalculators\StraightCalculator.cs" />
     <Compile Include="CategoryCalculators\TwoGroupsCalculator.cs" />
     <Compile Include="ICalculatorFactory.cs" />
     <Compile Include="StringExtensions.cs" />

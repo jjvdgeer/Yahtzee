@@ -13,5 +13,7 @@ namespace Yahtzee
 		FourOfAKind,
 		TwoPairs,
 		FullHouse,
+		SmallStraight,
+		LargeStraight,
 	}
 }
