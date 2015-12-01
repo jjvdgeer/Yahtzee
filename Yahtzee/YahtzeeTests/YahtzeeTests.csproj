@@ -65,6 +65,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="CategoryCalculatorTests\OnesTest.cs" />
+    <Compile Include="CategoryCalculatorTests\TwosTest.cs" />
     <Compile Include="YahtzeeScorerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

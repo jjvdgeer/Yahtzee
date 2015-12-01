@@ -6,24 +6,24 @@ using Yahtzee.CategoryCalculators;
 namespace YahtzeeTests.CategoryCalculatorTests
 {
 	[TestClass]
-	public class OnesTest
+	public class TwosTest
 	{
 		[TestMethod]
-		public void ZeroOnesShouldReturnZero()
+		public void ZeroTwosShouldReturnZero()
 		{
-			new OnesCalculator().GetScore(new[] {2, 3, 4, 5}).Should().Be(0);
+			new TwosCalculator().GetScore(new[] {1, 3, 4, 5}).Should().Be(0);
 		}
 
 		[TestMethod]
 		public void AllOnesShouldBeSummed()
 		{
-			new OnesCalculator().GetScore(new[] { 1, 1, 1, 1, 1 }).Should().Be(5);
+			new TwosCalculator().GetScore(new[] { 2, 2, 2, 2, 2 }).Should().Be(10);
 		}
 
 		[TestMethod]
 		public void OnesCategoryShouldReturnOnes()
 		{
-			new OnesCalculator().Category.Should().Be(Category.Ones);
+			new TwosCalculator().Category.Should().Be(Category.Twos);
 		}
 	}
 }

@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Yahtzee.CategoryCalculators
 {
@@ -12,7 +11,7 @@ namespace Yahtzee.CategoryCalculators
 
 		public override int GetScore(IEnumerable<int> roll)
 		{
-			return roll.Where(i => i == 1).Sum();
+			return AddSumOfDice(roll, 1);
 		}
 	}
 }

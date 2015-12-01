@@ -1,4 +1,8 @@
 namespace Yahtzee
 {
-	public enum Category { Ones }
+	public enum Category
+	{
+		Ones,
+		Twos
+	}
 }
