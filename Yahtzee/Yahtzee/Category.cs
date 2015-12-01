@@ -7,6 +7,7 @@ namespace Yahtzee
 		Threes,
 		Fours,
 		Fives,
-		Sixes
+		Sixes,
+		Pair,
 	}
 }

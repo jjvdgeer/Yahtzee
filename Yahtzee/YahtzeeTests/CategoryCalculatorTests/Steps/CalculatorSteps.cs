@@ -8,7 +8,7 @@ using Yahtzee;
 namespace YahtzeeTests.CategoryCalculatorTests.Steps
 {
 	[Binding]
-	public sealed class SingleNumberCalculatorSteps
+	public sealed class CalculatorSteps
 	{
 		private IEnumerable<int> _roll;
 		private Category _type;

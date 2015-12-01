@@ -43,6 +43,7 @@
     <Compile Include="Category.cs" />
     <Compile Include="CategoryCalculators\CategoryCalculator.cs" />
     <Compile Include="CategoryCalculators\ICategoryCalculator.cs" />
+    <Compile Include="CategoryCalculators\PairCalculcator.cs" />
     <Compile Include="CategoryCalculators\SingleNumberCalculator.cs" />
     <Compile Include="ICalculatorFactory.cs" />
     <Compile Include="StringExtensions.cs" />

@@ -69,17 +69,26 @@
   </Choose>
   <ItemGroup>
     <Compile Include="CalculatorFactoryTest.cs" />
+    <Compile Include="CategoryCalculatorTests\PairCalculator.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PairCalculator.feature</DependentUpon>
+    </Compile>
     <Compile Include="CategoryCalculatorTests\SingleNumberCalculator.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SingleNumberCalculator.feature</DependentUpon>
     </Compile>
-    <Compile Include="CategoryCalculatorTests\Steps\SingleNumberCalculatorSteps.cs" />
+    <Compile Include="CategoryCalculatorTests\Steps\CalculatorSteps.cs" />
     <Compile Include="YahtzeeScorerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="CategoryCalculatorTests\PairCalculator.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PairCalculator.feature.cs</LastGenOutput>
+    </None>
     <None Include="CategoryCalculatorTests\SingleNumberCalculator.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SingleNumberCalculator.feature.cs</LastGenOutput>
