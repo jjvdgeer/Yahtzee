@@ -5,20 +5,14 @@ namespace Yahtzee.CategoryCalculators
 {
 	public class StraightCalculator : CategoryCalculator
 	{
-		private readonly Category _category;
 		private readonly int _start;
 		private readonly int _end;
 
 		public StraightCalculator(Category category, int start, int end)
+			: base(category)
 		{
-			_category = category;
 			_start = start;
 			_end = end;
-		}
-
-		public override Category Category
-		{
-			get { return _category; }
 		}
 
 		public override int GetScore(IEnumerable<int> roll)

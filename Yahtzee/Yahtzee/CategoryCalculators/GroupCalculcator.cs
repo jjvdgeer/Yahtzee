@@ -6,17 +6,11 @@ namespace Yahtzee.CategoryCalculators
 	public class GroupCalculcator : CategoryCalculator
 	{
 		protected readonly int _count;
-		private readonly Category _category;
 
 		public GroupCalculcator(Category category, int count)
+			: base(category)
 		{
 			_count = count;
-			_category = category;
-		}
-
-		public override Category Category
-		{
-			get { return _category; }
 		}
 
 		public override int GetScore(IEnumerable<int> roll)
