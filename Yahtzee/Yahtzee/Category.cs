@@ -16,5 +16,6 @@ namespace Yahtzee
 		SmallStraight,
 		LargeStraight,
 		Chance,
+		Yahtzee
 	}
 }

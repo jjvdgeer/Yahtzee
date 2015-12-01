@@ -20,6 +20,8 @@ namespace Yahtzee
 			yield return new TwoGroupsCalculator(Category.FullHouse, 3, 2);
 			yield return new StraightCalculator(Category.SmallStraight, 1, 5);
 			yield return new StraightCalculator(Category.LargeStraight, 2, 6);
+			yield return new ChanceCalculator();
+			yield return new YahtzeeCalculator();
 		}
 	}
 }

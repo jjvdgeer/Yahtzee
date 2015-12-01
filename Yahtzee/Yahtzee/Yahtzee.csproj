@@ -48,6 +48,7 @@
     <Compile Include="CategoryCalculators\SingleNumberCalculator.cs" />
     <Compile Include="CategoryCalculators\StraightCalculator.cs" />
     <Compile Include="CategoryCalculators\TwoGroupsCalculator.cs" />
+    <Compile Include="CategoryCalculators\YahtzeeCalculator.cs" />
     <Compile Include="ICalculatorFactory.cs" />
     <Compile Include="StringExtensions.cs" />
     <Compile Include="YahtzeeScorer.cs" />

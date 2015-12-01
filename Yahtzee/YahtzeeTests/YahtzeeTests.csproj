@@ -95,6 +95,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TwoGroupCalculator.feature</DependentUpon>
     </Compile>
+    <Compile Include="CategoryCalculatorTests\YahtzeeCalculator.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YahtzeeCalculator.feature</DependentUpon>
+    </Compile>
     <Compile Include="YahtzeeScorerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -119,6 +124,10 @@
     <None Include="CategoryCalculatorTests\TwoGroupCalculator.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>TwoGroupCalculator.feature.cs</LastGenOutput>
+    </None>
+    <None Include="CategoryCalculatorTests\YahtzeeCalculator.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>YahtzeeCalculator.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

@@ -1,5 +1,5 @@
-﻿Feature: PairCalculator
-	In order to calculate Yahtzee scores of pairs
+﻿Feature: GroupCalculator
+	In order to calculate Yahtzee scores of groups
 	As a player
 	I want to be told the score of a roll
 
