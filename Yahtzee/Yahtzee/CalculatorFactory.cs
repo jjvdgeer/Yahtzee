@@ -15,6 +15,7 @@ namespace Yahtzee
 			yield return new SingleNumberCalculator(Category.Sixes, 6);
 			yield return new PairCalculcator(Category.Pair, 2);
 			yield return new PairCalculcator(Category.ThreeOfAKind, 3);
+			yield return new PairCalculcator(Category.FourOfAKind, 4);
 		}
 	}
 }

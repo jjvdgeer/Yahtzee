@@ -33,7 +33,7 @@ namespace Yahtzee.CategoryCalculators
 				.GroupBy(i => i)
 				.Select(g => new Group(g.Count(), g.Key))
 				.Where(g => g.Count >= _count)
-				.OrderByDescending(g => g.Count);
+				.OrderByDescending(g => g.Dice);
 		}
 
 		private class Group
