@@ -9,5 +9,6 @@ namespace Yahtzee
 		Fives,
 		Sixes,
 		Pair,
+		ThreeOfAKind,
 	}
 }

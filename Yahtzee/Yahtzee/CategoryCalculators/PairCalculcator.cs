@@ -8,7 +8,7 @@ namespace Yahtzee.CategoryCalculators
 		private readonly int _count;
 		private readonly Category _category;
 
-		public PairCalculcator(int count, Category category)
+		public PairCalculcator(Category category, int count)
 		{
 			_count = count;
 			_category = category;
