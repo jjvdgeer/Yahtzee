@@ -16,7 +16,10 @@ namespace Yahtzee.CategoryCalculators
 		public override int GetScore(IEnumerable<int> roll)
 		{
 			var groups = GetGroups(roll).ToList();
-			var firstGroup = GetCandidates(groups, _count).FirstOrDefault() ?? new Group(0, 0);
+			var firstGroup = GetCandidates(groups, _count).FirstOrDefault();
+			if (firstGroup == null)
+				return 0;
+
 			var secondGroup = GetCandidatesExceptGroup(groups, firstGroup).FirstOrDefault();
 
 			return secondGroup == null

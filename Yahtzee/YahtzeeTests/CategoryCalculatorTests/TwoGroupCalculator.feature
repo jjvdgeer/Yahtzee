@@ -19,3 +19,4 @@ Scenario Outline: Calculate rolls
 	| 1,2,3,4,5 | FullHouse | 0     |
 	| 1,1,1,2,3 | FullHouse | 0     |
 	| 1,1,1,2,2 | FullHouse | 7     |
+	| 2,2,3,3,4 | FullHouse | 0     |

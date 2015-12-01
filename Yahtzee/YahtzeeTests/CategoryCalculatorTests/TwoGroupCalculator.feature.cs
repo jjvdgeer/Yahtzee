@@ -193,6 +193,18 @@ this.ScenarioSetup(scenarioInfo);
         {
             this.CalculateRolls("1,1,1,2,2", "FullHouse", "7", ((string[])(null)));
         }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Calculate rolls")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TwoGroupCalculator")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 9")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:roll", "2,2,3,3,4")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:type", "FullHouse")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:score", "0")]
+        public virtual void CalculateRolls_Variant9()
+        {
+            this.CalculateRolls("2,2,3,3,4", "FullHouse", "0", ((string[])(null)));
+        }
     }
 }
 #pragma warning restore
