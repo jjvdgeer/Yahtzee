@@ -31,6 +31,11 @@ namespace Yahtzee
 			return _calculatorFactory.GetCalculators().Single(c => c.Category == category).GetScore(roll);
 		}
 
+		public Score Max(string roll)
+		{
+			return Max(ParseRoll(roll));
+		}
+
 		public Score Max(IEnumerable<int> roll, IEnumerable<Category> excludedCategories = null)
 		{
 			var excluded = (excludedCategories ?? new Category[0]).ToList();
@@ -40,6 +45,11 @@ namespace Yahtzee
 				.Where(calc => excluded.All(c => c != calc.Category))
 				.OrderByDescending(s => s.Result)
 				.First();
+		}
+
+		public Score MaxWithoutChance(string roll)
+		{
+			return MaxWithoutChance(ParseRoll(roll));
 		}
 
 		public Score MaxWithoutChance(IEnumerable<int> roll)

@@ -1,0 +1,11 @@
+﻿<Window x:Class="Yahtzee.Gui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="137.17" Width="273.327">
+	<Grid Margin="0,0,3.4,0.8">
+		<TextBox HorizontalAlignment="Left" Height="23" Margin="54,46,0,0" TextWrapping="Wrap" Text="{Binding Roll}" VerticalAlignment="Top" Width="115"/>
+		<Label Content="Roll" HorizontalAlignment="Left" Margin="24,42,0,0" VerticalAlignment="Top"/>
+		<Button Content="Get score" HorizontalAlignment="Left" Margin="174,72,0,0" VerticalAlignment="Top" Width="75" Command="{Binding GetScoreCommand}"/>
+		<Button Content="Random roll" HorizontalAlignment="Left" Margin="174,48,0,0" VerticalAlignment="Top" Width="75" Command="{Binding GetRandomRollCommand}"/>
+	</Grid>
+</Window>
