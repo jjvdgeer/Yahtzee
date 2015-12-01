@@ -80,6 +80,11 @@
       <DependentUpon>SingleNumberCalculator.feature</DependentUpon>
     </Compile>
     <Compile Include="CategoryCalculatorTests\Steps\CalculatorSteps.cs" />
+    <Compile Include="CategoryCalculatorTests\TwoPairCalculator.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TwoPairCalculator.feature</DependentUpon>
+    </Compile>
     <Compile Include="YahtzeeScorerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -92,6 +97,10 @@
     <None Include="CategoryCalculatorTests\SingleNumberCalculator.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SingleNumberCalculator.feature.cs</LastGenOutput>
+    </None>
+    <None Include="CategoryCalculatorTests\TwoPairCalculator.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TwoPairCalculator.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

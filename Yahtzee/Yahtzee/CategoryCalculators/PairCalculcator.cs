@@ -5,7 +5,7 @@ namespace Yahtzee.CategoryCalculators
 {
 	public class PairCalculcator : CategoryCalculator
 	{
-		private readonly int _count;
+		protected readonly int _count;
 		private readonly Category _category;
 
 		public PairCalculcator(Category category, int count)
@@ -21,22 +21,32 @@ namespace Yahtzee.CategoryCalculators
 
 		public override int GetScore(IEnumerable<int> roll)
 		{
-			return 
-				Candidates(roll)
-				.Select(g => _count * g.Dice)
-				.FirstOrDefault();
+			return GetScore(roll, _count);
 		}
 
-		private IEnumerable<Group> Candidates(IEnumerable<int> roll)
+		protected int GetScore(IEnumerable<int> roll, int count)
 		{
-			return roll
-				.GroupBy(i => i)
-				.Select(g => new Group(g.Count(), g.Key))
-				.Where(g => g.Count >= _count)
+			return
+				GetCandidates(GetGroups(roll), count)
+					.Select(g => count * g.Dice)
+					.FirstOrDefault();
+		}
+
+		protected IEnumerable<Group> GetCandidates(IEnumerable<Group> groups, int count)
+		{
+			return groups
+				.Where(g => g.Count >= count)
 				.OrderByDescending(g => g.Dice);
 		}
 
-		private class Group
+		protected static IEnumerable<Group> GetGroups(IEnumerable<int> roll)
+		{
+			return roll
+				.GroupBy(i => i)
+				.Select(g => new Group(g.Count(), g.Key));
+		}
+
+		protected class Group
 		{
 			public Group(int count, int dice)
 			{

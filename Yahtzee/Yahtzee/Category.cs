@@ -11,5 +11,6 @@ namespace Yahtzee
 		Pair,
 		ThreeOfAKind,
 		FourOfAKind,
+		TwoPairs,
 	}
 }
