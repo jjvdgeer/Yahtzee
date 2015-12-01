@@ -11,7 +11,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace YahtzeeTests.CategoryCalculatorTests
+namespace Yahtzee.Tests.CategoryCalculatorTests
 {
     using TechTalk.SpecFlow;
     
@@ -49,7 +49,7 @@ namespace YahtzeeTests.CategoryCalculatorTests
             if (((TechTalk.SpecFlow.FeatureContext.Current != null) 
                         && (TechTalk.SpecFlow.FeatureContext.Current.FeatureInfo.Title != "AssignmentExamples")))
             {
-                YahtzeeTests.CategoryCalculatorTests.AssignmentExamplesFeature.FeatureSetup(null);
+                Yahtzee.Tests.CategoryCalculatorTests.AssignmentExamplesFeature.FeatureSetup(null);
             }
         }
         

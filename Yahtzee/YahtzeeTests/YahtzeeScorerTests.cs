@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using FakeItEasy;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Yahtzee;
 using Yahtzee.CategoryCalculators;
 
-namespace YahtzeeTests
+namespace Yahtzee.Tests
 {
 	[TestClass]
 	public class YahtzeeScorerTests

@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
 using TechTalk.SpecFlow;
-using Yahtzee;
 
-namespace YahtzeeTests.CategoryCalculatorTests.Steps
+namespace Yahtzee.Tests.CategoryCalculatorTests.Steps
 {
 	[Binding]
 	public sealed class CalculatorSteps
