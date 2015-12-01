@@ -8,6 +8,7 @@ namespace Yahtzee
 		public IEnumerable<ICategoryCalculator> GetCalculators()
 		{
 			yield return new OnesCalculator();
+			yield return new TwosCalculator();
 		}
 	}
 }

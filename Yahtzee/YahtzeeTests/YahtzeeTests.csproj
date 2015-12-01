@@ -64,6 +64,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="CalculatorFactoryTest.cs" />
     <Compile Include="CategoryCalculatorTests\OnesTest.cs" />
     <Compile Include="CategoryCalculatorTests\TwosTest.cs" />
     <Compile Include="YahtzeeScorerTests.cs" />
