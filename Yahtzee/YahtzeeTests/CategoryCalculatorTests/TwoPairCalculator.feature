@@ -9,8 +9,13 @@ Scenario Outline: Calculate rolls
 	When I calculate the score
 	Then the result should be <score>
 	Examples:
-	| roll      | type     | score |
-	| 1,2,3,4,5 | TwoPairs | 0     |
-	| 1,1,2,3,4 | TwoPairs | 0     |
-	| 1,1,2,2,3 | TwoPairs | 6     |
-	| 1,1,1,2,2 | TwoPairs | 6     |
+	| roll      | type      | score |
+	| 1,2,3,4,5 | TwoPairs  | 0     |
+	| 1,1,2,3,4 | TwoPairs  | 0     |
+	| 1,1,2,2,3 | TwoPairs  | 6     |
+	| 1,1,1,1,2 | TwoPairs  | 4     |
+	| 1,1,1,1,1 | TwoPairs  | 4     |
+	| 1,1,1,2,2 | TwoPairs  | 6     |
+	| 1,2,3,4,5 | FullHouse | 0     |
+	| 1,1,1,2,3 | FullHouse | 0     |
+	| 1,1,1,2,2 | FullHouse | 7     |

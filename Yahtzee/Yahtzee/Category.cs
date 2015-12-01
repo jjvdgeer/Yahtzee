@@ -12,5 +12,6 @@ namespace Yahtzee
 		ThreeOfAKind,
 		FourOfAKind,
 		TwoPairs,
+		FullHouse,
 	}
 }
